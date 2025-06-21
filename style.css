@@ -40,8 +40,19 @@
 .logo span{
     color: rgb(238, 199, 126);
 }
-.items ul{
+.items ul li{
+    font-size: 20px;
+}
+.items{
     display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.items ul{
+
+    display: flex;
+    flex-wrap: wrap;
    
     /* justify-content: space-between; */
     justify-content: center;
@@ -58,7 +69,7 @@
     transition: .3s;
 }
 .items button{
-   padding: 5px 15px;
+   padding: 0.5rem 2rem;
    border-radius: 7px;
    margin: 10px;
    background-color: red;
@@ -139,18 +150,20 @@
 }
 
 
-@media only screen and (max-width:768px){
+@media only screen and (max-width: 768px) {
     body{
         padding: 0 12px;
     }
     .main{
         flex-direction: column;
+       
         gap: 10px;
-         margin-top: 10px;  
+        margin-top: 10px;  
+        
 
     }
-    .items ul{
-        font: 15px;
+    .items ul li{   
+        font-size: 10px;
     }
 
 
