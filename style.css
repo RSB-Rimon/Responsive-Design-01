@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.max-width{
+    max-width: 1040px;
+    margin: auto;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.logo{
+   display: flex;
+}
+.logo h1 i{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: red;
+}
+.logo h1{
+     font-family: "Edu QLD Hand", cursive;
+    color: red;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.logo span{
+    color: rgb(238, 199, 126);
+}
+.items ul{
+    display: flex;
+   
+    /* justify-content: space-between; */
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+    font-size: 20px;
+    list-style: none;
+    color: red;
+    cursor: pointer;
+}
+.items ul li:hover{
+    color: black;
+    transition: .3s;
+}
+.items button{
+   padding: 5px 15px;
+   border-radius: 7px;
+   margin: 10px;
+   background-color: red;
+   color: white;
+   border: none;
+}
+/* this is end nav bar */
+.contant{
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  
+  
+  
+}
+.contant p{
+    font-size: 13px;
+    color: rgb(82, 79, 79);
+}
+.contant h1{
+    font-size: 35px;
+    color: rgb(74, 70, 70);
+  
+}
+.photo{
+    flex: 35%;
+    /* background-color: red; */
+    position: relative;
+}
+.photo img{
+    width: 100%;
+}
+.contant button{
+    padding: .5rem 2rem;
+    width: 7rem;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius:.3rem;
+    cursor: pointer;
+}
+.contant span{
+    color: red;
+}
+
+
+.banner-image-card-container {
+  background-color: rgb(245, 233, 233);
+  margin: 2px;
+  padding: 12px 12px;
+  font-size: 12px;
+  border-radius: 0.2rem;
+  color: red;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.banner-image-card:hover{
+   margin: 4px;
+  padding: 14px 14px; 
+}
+.image-card1{
+    position: absolute;
+    top: 25px;
+}
+.image-card2{
+    position: absolute;
+    bottom: 0;
+}
+.image-card3{
+     position: absolute;
+  top: 50%;
+  right: 0;
+
+
+}
+
+
+@media only screen and (max-width:768px){
+    body{
+        padding: 0 12px;
+    }
+    .main{
+        flex-direction: column;
+        gap: 10px;
+         margin-top: 10px;  
+
+    }
+    .items ul{
+        font: 15px;
+    }
+
+
+.hero{
+    flex-direction: column-reverse;
+}
+    
+}
