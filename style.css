@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 .max-width{
     max-width: 1040px;
     margin: auto;
@@ -11,7 +13,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    /* backdrop-filter: blur(30px);
+    border: 0px solid rgba(0,0,0,0.8);
+    box-shadow: 
+          10px 10px 20px rgb(48, 5, 5),
+         -10px -10px 20px #560404;
+     */
 }
 .hero{
     display: flex;
@@ -40,14 +47,19 @@
 .logo span{
     color: rgb(238, 199, 126);
 }
-.items ul li{
+.items ul li {
     font-size: 20px;
+   
 }
 .items{
     display: flex;
     justify-content: center;
     align-items: center;
 
+}
+.items li a{
+    text-decoration: none;
+    color: red;
 }
 .items ul{
 
@@ -63,6 +75,8 @@
     list-style: none;
     color: red;
     cursor: pointer;
+    
+
 }
 .items ul li:hover{
     color: black;
@@ -128,6 +142,11 @@
   display: flex;
   align-items: center;
   gap: 7px;
+   backdrop-filter: blur(30px);
+    border: 0px solid rgba(0, 0, 0, 0.8);
+    box-shadow: 
+          10px 10px 20px rgb(11, 9, 9),
+         -10px -10px 20px #fdfbfb;
 }
 .banner-image-card:hover{
    margin: 4px;
@@ -148,10 +167,280 @@
 
 
 }
+   
+.card-photo img{
+    width: 400px;
+}
+/* this is card style */
+.our{
+    padding-top: 50px;
+}
+.our h1{
+    font-size: 35px;
+    padding-top: 10px;
+    color: rgb(57, 55, 55);
+
+
+}
+.our span{
+    color: red;
+}
+.our p{
+    font-size: 15px;
+    padding: 5px;
+    color: rgb(99, 94, 94);
+    
+}
+
+.container-div{
+    display: flex;
+    gap: 20px;
+    padding-top: 50px;
+    
+}
+.main-card {
+  display: flex;
+ flex-wrap: ;
+  gap: 25px;
+}
+.main-card h1 {
+  font-size: 2rem;
+}
+.main-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: rgb(232, 229, 229);
+  border-radius: 0.3rem;
+}
+.main-card-content h1{
+    color: rgb(62, 60, 60);
+} 
+.main-card-content p{
+    color: rgb(102, 96, 96);
+
+}
+
+
+
+.main-card-content button {
+  background: red;
+  color: white;
+  padding: 8px;
+  font-size: 18px;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+.text-content h1 {
+  font-size: 35px;
+  color: rgb(153, 147, 147);
+}
+.text-content span {
+  color: red;
+}
+.para {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 22px;
+}
+.text-content p {
+  font-size: 20px;
+  color: rgb(95, 91, 91);
+  padding: 10px;
+}
+.text-content {
+  padding: 10px;
+  width: 50%;
+  color: rgb(220, 152, 152);
+}
+.txt {
+    
+  padding: 0 15px;
+  font-size: 15px;
+  
+}
+
+
+.main-card-content img {
+  width: 100%;
+  border-radius: 0.3rem;
+}
+.duration {
+  
+  display: flex;
+ margin: 0 10px;
+  justify-content: space-between;
+}
+.duration .drt {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  gap: 5px;
+  padding: 0 10px  ;
+  
+}
+hr{
+  margin: 10px;
+}
+.duration .del{
+    text-decoration: line-through;
+}
+
+.contact-section{
+    padding: 50px;
+}
+.contact-section div h1{
+    font-size: 40px;
+
+}
+.contact-section div p{
+     color: rgb(52, 50, 50);
+     font-size: 15px;
+
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+   
+
+}
+.input-container{
+    gap: 25px;
+    position: relative;
+}
+
+.input-container input,textarea{
+
+    padding: 20px;
+    padding-left: 30px;
+
+    border-radius: .3rem;
+    width: 50%;
+    border: 1px solid red;
+    resize: none;
+}
+.div-v{
+    padding-top:  25px;
+    gap: 20px;
+}
+.div-v h1{
+    color: red;
+    font-size: 35px;
+}
+.input-container button{
+    width: 9rem;
+    padding: 15px;
+    color: white;
+    background-color: red;
+    border-radius: .3rem;
+}
+ .input-box {
+    position: relative;
+} 
+.input-box i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    
+    
+}
+.input-box-2{
+    position: relative;
+}
+.input-box-2 i{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+}
+.input-box-3{
+    position: relative;
+}
+.input-box-3 i{
+    position: absolute;
+     top: 50%;
+    left: 10px;
+}
+.input-box-4{
+    position: relative;
+}
+.input-box-4 i{
+    position: absolute;
+    top: 28%;
+    left: 9px;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer{
+    background-color: black;
+    padding: 50px;
+    padding-top: 50px;
+}
+ .logo p{
+    color: rgb(218, 213, 213);
+ }
+.icon-div i{
+    color: rgb(130, 118, 118);
+    font-size: 30px;
+}
+.icon-div{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 30px;
+  
+}
+.About{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.About-contant{
+    flex: 50%;
+    padding-top: 50px;
+    
+   
+}
+.about-contant h1{
+    font-size: 35px;
+    color: rgb(49, 48, 48);
+}
+.about-contant p{
+    color: rgb(43, 38, 38);
+    font-size: 15px;
+}
+.about-img{
+    flex: 35%;
+   
+   
+}
+.about-img img{
+    width: 100%;
+    border-radius: 50%;
+}
+.about-contant .item{
+    padding-top: 10px;
+    font-size: 25px;
+  
+}
+
+
 
 
 @media only screen and (max-width: 768px) {
-    body{
+    main{
         padding: 0 12px;
     }
     .main{
@@ -170,5 +459,13 @@
 .hero{
     flex-direction: column-reverse;
 }
+.container-div{
+    flex-direction: column;
+}
+.About{
+    flex-direction: column-reverse;
+  
+}
+
     
 }
